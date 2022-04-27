@@ -1,6 +1,6 @@
 # international-archaeology-ai-challenge
 
-Codes for the HIDA/IDSI international archaeology AI challenge. The task is multiclass semantic segmentation of ancient agricultural terrace/wall. We use UNet/DeepLabV3+ with EfficientNet backbone and get an overal IOU (foreground only) of 0.31.
+Codes for the HIDA/IDSI international archaeology AI challenge. The task is multiclass semantic segmentation of ancient agricultural terrace/wall in the Negev desert. We use UNet/DeepLabV3+ with EfficientNet backbone and get an overal IOU (foreground only) of 0.31.
 
 ## data
 - The training data is 500 512*512 image patches, each patch contains 9 feature images (orthophoto, DTM, etc.)
