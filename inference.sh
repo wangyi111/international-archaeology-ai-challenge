@@ -1,0 +1,9 @@
+python main_inference.py \
+--root_dir data/Hackathon_data \
+--out_dir ./results/all_unet_efn_dice2_aug_attn_final/Pred_04 \
+--resume ./checkpoints/all_unet_efn_dice2_aug_attn_final/checkpoint_0099.pth.tar \
+--architecture unet \
+--backbone efficientnet-b5 \
+--batch_size 1 \
+--num_workers 0 \
+--subset all \

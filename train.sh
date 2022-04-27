@@ -1,0 +1,12 @@
+python main_train.py \
+--root_dir ./data/Hackathon_data \
+--checkpoints_dir ./checkpoints/all_unet_efn_dice2_aug_attn_final \
+--architecture unet \
+--backbone efficientnet-b5 \
+--batch_size 8 \
+--epochs 100 \
+--num_workers 2 \
+--lr 0.001 \
+--subset all \
+--pretrain_type imagenet \
+--cos \
