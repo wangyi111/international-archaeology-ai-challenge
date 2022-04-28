@@ -2,9 +2,14 @@
 
 Codes for the [HIDA/IDSI international archaeology AI challenge](https://www.helmholtz-hida.de/en/events/internationale-ki-challenge-archaeologie/). The task is multiclass semantic segmentation of ancient agricultural terrace/wall in the Negev desert. We use UNet/DeepLabV3+ with EfficientNet backbone and get an overal IOU (foreground only) of 0.31.
 
+|     |     |     |
+|:---:|:---:|:---:|
+|![Orthophoto](assets/ortho_258.png)|![Prediction](assets/pred_258.png)|![GroundTruth](assets/mask_258.png)|
+| Orthophoto | Prediction | GroundTruth |
+
 ## data
-- The training data is 500 512*512 image patches, each patch contains 9 feature images (orthophoto, DTM, etc.)
-- The testing data (for final score) is 200 unseen image patches
+- The training data are 500 512*512 image patches, each patch containing 9 feature images (Orthophoto, Aspect, DTM, Flow_Accum, Flow_Direction, Prof_curv, Slope, Tang_curv, Topo_Wetness).
+- The testing data (for final score) are 200 unseen image patches.
 
 ## model
 - architecture: [UNet](https://arxiv.org/abs/1505.04597)/[DeepLabV3+](https://arxiv.org/abs/1802.02611v3), we merge the output probability map of both models to calculate the final prediction
