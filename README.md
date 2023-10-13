@@ -1,6 +1,6 @@
 # international-archaeology-ai-challenge
 
-Codes for the [HIDA/IDSI international archaeology AI challenge](https://www.helmholtz-hida.de/en/events/internationale-ki-challenge-archaeologie/). The task is multiclass semantic segmentation of ancient agricultural terrace/wall in the Negev desert. We use UNet/DeepLabV3+ with EfficientNet backbone and get an overal IOU (foreground only) of 0.31.
+Codes for the [HIDA/IDSI international archaeology AI challenge](https://www.helmholtz-hida.de/en/events/internationale-ki-challenge-archaeologie/) where we won first place among the participants. The task is multiclass semantic segmentation of ancient agricultural terrace/wall in the Negev desert. We use UNet/DeepLabV3+ with EfficientNet backbone and get an overal IOU (foreground only) of 0.31.
 
 |     |     |     |
 |:---:|:---:|:---:|
@@ -25,3 +25,15 @@ Cross entropy loss + DICE loss, AdamW optimizer, cosine loss decay
 - train: `python main_train.py` or `bash train.sh`
 - inference: `python main_inference.py` or `bash inference.sh` (`python main_inference_2model.py` to do inference with merged models)
 - evaluate: `python main_test.py`
+
+## Citation
+```BibTeX
+@inproceedings{wang2022deep,
+  title={Deep Semantic Model Fusion for Ancient Agricultural Terrace Detection},
+  author={Wang, Yi and Liu, Chenying and Tiwari, Arti and Silver, Micha and Karnieli, Arnon and Zhu, Xiao Xiang and Albrecht, Conrad M},
+  booktitle={2022 IEEE International Conference on Big Data (Big Data)},
+  pages={4888--4892},
+  year={2022},
+  organization={IEEE}
+}
+```
